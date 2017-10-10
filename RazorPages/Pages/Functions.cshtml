@@ -1,0 +1,11 @@
+﻿@page
+@model IndexModel
+
+@functions{
+    public string Mensagem()
+    {
+        return $"Olá, agora são {DateTime.Now.ToString("t")}. Seja bem-vindo(a)!";
+    }
+}
+
+<h1>@Mensagem()</h1>
